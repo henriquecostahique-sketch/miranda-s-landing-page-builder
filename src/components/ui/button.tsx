@@ -16,11 +16,16 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        clinic: "rounded-xl bg-brand text-brand-foreground shadow-brand hover:bg-clinic-ink",
+        glass:
+          "rounded-xl border border-border bg-brand-glass text-clinic-ink shadow-sm backdrop-blur-xl hover:bg-background/80",
+        whatsapp: "rounded-full bg-whatsapp text-brand-foreground shadow-brand hover:bg-whatsapp/90",
       },
       size: {
         default: "h-9 px-4 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
+        lg: "h-12 px-6 py-3.5 text-[15px]",
+        clinic: "px-4 py-2.5 text-[14px]",
         icon: "h-9 w-9",
       },
     },
