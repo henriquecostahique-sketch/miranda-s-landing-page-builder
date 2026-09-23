@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Menu, MessageCircle, MapPin, Phone, Send, X } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type FormEvent } from "react";
 
 import heroImage from "@/assets/mirandas-hero-illustration.jpg";
 import { Button } from "@/components/ui/button";
@@ -118,7 +118,7 @@ function Index() {
     return parts.join("\n");
   }, [form]);
 
-  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (!form.consentimento) {
