@@ -420,7 +420,7 @@ function Index() {
                   </a>
                 </Button>
                 <Button asChild variant="glass" size="lg">
-                  <a href={clinica.instagramUrl} target="_blank" rel="noreferrer">
+                  <a href={clinica.instagramUrl} target="_blank" rel="noopener noreferrer">
                     Conhecer o Instagram
                   </a>
                 </Button>
@@ -616,13 +616,13 @@ function Footer({ navItems }: { navItems: Array<{ label: string; href: string }>
             <a href={whatsappLink(defaultMessage)} target="_blank" rel="noreferrer" className="transition hover:text-brand">
               WhatsApp
             </a>
-            <a href={clinica.instagramUrl} target="_blank" rel="noreferrer" className="transition hover:text-brand">
+            <a href={clinica.instagramUrl} target="_blank" rel="noopener noreferrer" className="transition hover:text-brand">
               Instagram
             </a>
-            <a href={clinica.facebookUrl} target="_blank" rel="noreferrer" className="transition hover:text-brand">
+            <a href={clinica.facebookUrl} target="_blank" rel="noopener noreferrer" className="transition hover:text-brand">
               Facebook
             </a>
-            <a href={clinica.siteUrl} target="_blank" rel="noreferrer" className="transition hover:text-brand">
+            <a href={clinica.siteUrl} target="_blank" rel="noopener noreferrer" className="transition hover:text-brand">
               Site institucional
             </a>
           </div>
