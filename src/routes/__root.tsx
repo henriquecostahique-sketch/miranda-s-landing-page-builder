@@ -103,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": ["Dentist", "MedicalClinic", "LocalBusiness"],
           name: "Miranda's Odontologia",
           url: "https://www.mirandasodontologia.com.br/",
-          telephone: "+55 11 5181-3460",
+          telephone: "+55 11 96450-8931",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Rua Bento Barbosa, 230",
