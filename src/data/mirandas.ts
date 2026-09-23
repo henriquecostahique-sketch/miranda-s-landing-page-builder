@@ -66,9 +66,6 @@ export const clinica: ClinicaConfig = {
   instagramUrl: "https://www.instagram.com/mirandas.odontologia/",
   facebookUrl: "https://www.facebook.com/mirandas.odontologia/",
   siteUrl: "https://www.mirandasodontologia.com.br/",
-  horarioFuncionamento: undefined,
-  responsavelTecnico: undefined,
-  cro: undefined,
 };
 
 // Placeholder — substituir pelos tratamentos reais da clínica antes da publicação.
