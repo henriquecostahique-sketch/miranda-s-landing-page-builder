@@ -62,7 +62,7 @@ export const clinica: ClinicaConfig = {
   cidadeEstado: "São Paulo - SP",
   cep: "04716-020",
   telefone: "(11) 96450-8931",
-  whatsapp: "(11) 96450-8931", // confirmar se este é o número de WhatsApp
+  whatsapp: "(11) 96450-8931", // confirmado pela clínica
   instagramUrl: "https://www.instagram.com/mirandas.odontologia/",
   facebookUrl: "https://www.facebook.com/mirandas.odontologia/",
   siteUrl: "https://www.mirandasodontologia.com.br/",

@@ -34,7 +34,8 @@ function onlyDigits(value: string) {
 
 function whatsappLink(message: string) {
   const phone = onlyDigits(clinica.whatsapp);
-  return `https://wa.me/55${phone}?text=${encodeURIComponent(message)}`;
+  const params = new URLSearchParams({ phone: `55${phone}`, text: message });
+  return `https://api.whatsapp.com/send?${params.toString()}`;
 }
 
 function treatmentMessage(nome: string) {
