@@ -200,7 +200,7 @@ function Index() {
                 <InfoPill label="Endereço" value={`${clinica.enderecoCurto} · ${clinica.bairro}`} />
                 <InfoPill label="Telefone" value={clinica.telefone} />
                 <InfoPill label="Horário" value={clinica.horarioFuncionamento ?? "Consulte pelo WhatsApp"} />
-                <InfoPill label="WhatsApp" value="Número a confirmar com a clínica" />
+                <InfoPill label="WhatsApp" value={clinica.whatsapp} />
               </div>
             </div>
           </div>
