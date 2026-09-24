@@ -431,7 +431,7 @@ function Index() {
       </main>
 
       <Footer navItems={navItems.filter((item) => item.show)} />
-      <FloatingWhatsApp />
+      <FloatingActions />
     </div>
   );
 }
