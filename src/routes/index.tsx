@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Menu, MessageCircle, MapPin, Phone, Send, X } from "lucide-react";
+import { Instagram, Menu, MessageCircle, MapPin, Phone, Send, X } from "lucide-react";
 import { useMemo, useState, type FormEvent } from "react";
 
 import heroImage from "@/assets/mirandas-hero-illustration.jpg";
@@ -431,7 +431,7 @@ function Index() {
       </main>
 
       <Footer navItems={navItems.filter((item) => item.show)} />
-      <FloatingWhatsApp />
+      <FloatingActions />
     </div>
   );
 }
@@ -622,9 +622,6 @@ function Footer({ navItems }: { navItems: Array<{ label: string; href: string }>
             <a href={clinica.facebookUrl} target="_blank" rel="noopener noreferrer" className="transition hover:text-brand">
               Facebook
             </a>
-            <a href={clinica.siteUrl} target="_blank" rel="noopener noreferrer" className="transition hover:text-brand">
-              Site institucional
-            </a>
           </div>
         </div>
       </div>
@@ -635,17 +632,29 @@ function Footer({ navItems }: { navItems: Array<{ label: string; href: string }>
   );
 }
 
-function FloatingWhatsApp() {
+function FloatingActions() {
   return (
-    <a
-      href={whatsappLink(defaultMessage)}
-      target="_blank"
-      rel="noreferrer"
-      className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-3.5 text-[15px] font-semibold text-brand-foreground shadow-brand transition hover:scale-[1.03]"
-      aria-label="Agendar pelo WhatsApp"
-    >
-      <MessageCircle aria-hidden="true" className="size-5" />
-      <span className="hidden sm:inline">WhatsApp</span>
-    </a>
+    <div className="fixed bottom-5 right-5 z-50 flex items-center gap-3">
+      <a
+        href={clinica.instagramUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 rounded-full bg-brand-glass px-5 py-3.5 text-[15px] font-semibold text-clinic-ink shadow-glass ring-1 ring-border backdrop-blur-xl transition hover:scale-[1.03]"
+        aria-label="Conheça nosso Instagram"
+      >
+        <Instagram aria-hidden="true" className="size-5" />
+        <span className="hidden sm:inline">Instagram</span>
+      </a>
+      <a
+        href={whatsappLink(defaultMessage)}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-3.5 text-[15px] font-semibold text-brand-foreground shadow-brand transition hover:scale-[1.03]"
+        aria-label="Agendar pelo WhatsApp"
+      >
+        <MessageCircle aria-hidden="true" className="size-5" />
+        <span className="hidden sm:inline">WhatsApp</span>
+      </a>
+    </div>
   );
 }
