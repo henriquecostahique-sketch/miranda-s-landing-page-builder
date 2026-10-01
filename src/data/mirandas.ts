@@ -137,3 +137,23 @@ export const politicaPrivacidade = {
   resumo:
     "Os dados enviados pelo formulário são usados apenas para retorno de contato e agendamento. Não solicite informações sensíveis de saúde por este formulário.",
 };
+// Casos "Antes e Depois" — adicione novos objetos para novos casos.
+// Não incluir identificação de paciente. Legenda só com procedimento confirmado pela clínica.
+import caso1Antes from "@/assets/antes-depois/caso1-antes.jpg.asset.json";
+import caso1Depois from "@/assets/antes-depois/caso1-depois.jpg.asset.json";
+
+export interface CasoAntesDepois {
+  id: string;
+  antesUrl: string;
+  depoisUrl: string;
+  legenda?: string;
+}
+
+export const casosAntesDepois: CasoAntesDepois[] = [
+  {
+    id: "caso-1",
+    antesUrl: caso1Antes.url,
+    depoisUrl: caso1Depois.url,
+    legenda: "", // procedimento não confirmado — não inventar
+  },
+];

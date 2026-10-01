@@ -3,11 +3,13 @@ import { Instagram, Menu, MessageCircle, MapPin, Phone, Send, X } from "lucide-r
 import { useMemo, useState, type FormEvent } from "react";
 
 import heroImage from "@/assets/mirandas-hero-illustration.jpg";
+import { AntesDepoisSection } from "@/components/AntesDepoisSection";
 import { Button } from "@/components/ui/button";
 import {
   clinica,
   depoimentos,
   diferenciais,
+  casosAntesDepois,
   galeria,
   politicaPrivacidade,
   profissionais,
@@ -255,6 +257,9 @@ function Index() {
 
         {profissionais.length > 0 ? <EquipeSection /> : null}
         {depoimentos.length > 0 ? <DepoimentosSection /> : null}
+        {casosAntesDepois.length > 0 ? (
+          <AntesDepoisSection ctaHref={whatsappLink("Olá! Gostaria de agendar uma avaliação na Miranda's Odontologia.")} />
+        ) : null}
         {galeria.length > 0 ? <GaleriaSection /> : null}
 
         <section id="diferenciais" className="pt-16 lg:pt-24">
