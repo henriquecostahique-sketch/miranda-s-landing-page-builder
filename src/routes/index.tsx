@@ -164,7 +164,21 @@ function Index() {
               <Button asChild variant="glass" size="lg">
                 <a href="#tratamentos">Conhecer tratamentos</a>
               </Button>
+              <Button asChild variant="glass" size="lg">
+                <a href={clinica.instagramUrl} target="_blank" rel="noopener noreferrer">
+                  <Instagram aria-hidden="true" />
+                  Conheça nosso Instagram
+                </a>
+              </Button>
             </div>
+            <a
+              href={clinica.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-[13px] font-semibold text-brand underline-offset-4 transition hover:underline"
+            >
+              @mirandas.odontologia →
+            </a>
           </div>
           <figure className="glass-panel overflow-hidden rounded-3xl">
             <img
@@ -467,6 +481,11 @@ function Header({
           ))}
         </nav>
         <div className="flex items-center gap-2">
+          <Button asChild variant="glass" size="icon" aria-label="Conheça nosso Instagram">
+            <a href={clinica.instagramUrl} target="_blank" rel="noopener noreferrer">
+              <Instagram aria-hidden="true" />
+            </a>
+          </Button>
           <Button asChild variant="clinic" size="clinic" className="hidden sm:inline-flex">
             <a href={whatsappLink(defaultMessage)} target="_blank" rel="noreferrer">
               <MessageCircle aria-hidden="true" />
@@ -635,16 +654,6 @@ function Footer({ navItems }: { navItems: Array<{ label: string; href: string }>
 function FloatingActions() {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex items-center gap-3">
-      <a
-        href={clinica.instagramUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-brand-glass px-5 py-3.5 text-[15px] font-semibold text-clinic-ink shadow-glass ring-1 ring-border backdrop-blur-xl transition hover:scale-[1.03]"
-        aria-label="Conheça nosso Instagram"
-      >
-        <Instagram aria-hidden="true" className="size-5" />
-        <span className="hidden sm:inline">Instagram</span>
-      </a>
       <a
         href={whatsappLink(defaultMessage)}
         target="_blank"
