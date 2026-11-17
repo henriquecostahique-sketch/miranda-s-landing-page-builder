@@ -229,7 +229,7 @@ function Index() {
             </h2>
             <p className="mt-3 text-[15px] leading-relaxed text-clinic-ink-muted text-pretty">
               As opções abaixo são exemplos a validar com a clínica antes da publicação.
-              Selecione um atendimento e fale diretamente pelo WhatsApp.
+              Selecione um atendimento e fale diretamente pelo WhatsApp!
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
