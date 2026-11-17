@@ -109,6 +109,8 @@ interface Tratamento {
 
 Como nenhum tratamento específico da Miranda's Odontologia foi confirmado nesta pesquisa, popular o array inicialmente com 4 a 6 itens placeholder de categorias amplamente comuns em odontologia geral, claramente marcados como "exemplo — substituir pelos tratamentos reais da clínica" (ex.: "Clínica geral", "Ortodontia", "Estética dental", "Implantes", "Odontopediatria", "Prevenção"), deixando evidente na estrutura de dados (comentário no código) que são placeholders a validar com a clínica antes da publicação. Cada card: ícone, nome, descrição curta, CTA "Agendar avaliação" (leva ao WhatsApp com mensagem contextual do tratamento).
 
+Texto de abertura da seção (copy implementada): "As opções abaixo são exemplos a validar com a clínica antes da publicação. Selecione um atendimento e fale diretamente pelo WhatsApp!"
+
 ## 10. Equipe (seção condicional)
 
 Não publicar nomes, fotos ou CROs de profissionais, pois nenhum foi confirmado nesta pesquisa. Construir o componente de forma que, ao preencher o array de profissionais (nome, especialidade, CRO, foto, breve descrição), a seção "Nossa equipe" apareça automaticamente; enquanto vazio, a seção não deve ser renderizada.
